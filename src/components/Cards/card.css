@@ -1,0 +1,14 @@
+.container-grid {
+    padding: 1.5em;
+}
+
+.card-media {
+    margin: 0.7em;
+    border-radius: 2em !important;
+}
+
+.image {
+    width: 17em;
+    height:  15em;
+    object-fit: fill;
+}

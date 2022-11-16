@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react';
 
 import { Cards } from '../components/Cards/Cards';
 import { BreedSelector } from '../components/Selectors/BreedSelector';
-import { getBreeds, getDogImg, getSubBreeds } from '../helpers/http';
+import { getBreeds, getDogImg, getSubBreeds } from '../helpers/https';
 
 export const DoggyList = () => {
 	const [breeds, setBreeds] = useState([]);
 	const [selected, setSelected] = useState([]);
 	const [subBreeds, setSubBreeds] = useState([]);
-	const [selectedSubBreed, setSelectedSubBreed] = [];
-	const [images, setImages] = (useState = []);
+	const [selectedSubBreed, setSelectedSubBreed] = useState([]);
+	const [images, setImages] = useState([]);
 
 	useEffect(() => {
 		const updateBreeds = async () => {
@@ -34,7 +34,7 @@ export const DoggyList = () => {
 
 			if (listSubBreeds.length) {
 				const subBreedOptions = listSubBreeds.map((breed) => {
-					const options = buildSubBreedOptions(breed.SubBreeds);
+					const options = buildSubBreedOptions(breed.subBreeds);
 
 					return {
 						label: breed.label,
@@ -68,9 +68,9 @@ export const DoggyList = () => {
 		);
 	};
 
-    return (
-        <>
-        <BreedSelector
+	return (
+		<>
+			<BreedSelector
 				selected={selected}
 				selectedSubBreed={selectedSubBreed}
 				breeds={breeds}
@@ -78,6 +78,11 @@ export const DoggyList = () => {
 				onChangeBreed={handleBreedSelect}
 				onChangeSubBreed={handleSubBreedSelect}
 			/>
-        </>
-    )
+			<hr></hr>
+
+			<Grid>
+				<Cards breedImage={images} />
+			</Grid>
+		</>
+	);
 };
