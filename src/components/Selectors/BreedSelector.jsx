@@ -5,6 +5,8 @@ import makeAnimated from 'react-select/animated';
 import { Grid } from '@mui/material';
 import 'animate.css';
 
+import "./breedSelector.css"
+
 
 const animatedComponents = makeAnimated();
 

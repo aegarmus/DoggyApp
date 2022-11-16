@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Card, CardMedia } from '@mui/material';
 import 'animate.css';
 
+import "./card.css"
 
 export const Cards = ({ breedImage, breedName }) => {
 	return (

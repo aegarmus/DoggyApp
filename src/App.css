@@ -1,7 +1,19 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+	font-family: Inter, Avenir, Helvetica, Arial, sans-serif, 'Lobster Two',
+		cursive, 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	--disable: #cccccc;
+	--primary400: #269e99;
+	--primary500: #336b7b;
+	--primary600: #3a526d;
+	--white: #ffffff;
 }
+
 

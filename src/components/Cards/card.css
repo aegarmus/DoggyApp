@@ -5,6 +5,7 @@
 .card-media {
     margin: 0.7em;
     border-radius: 2em !important;
+    background-color: var(--primary600) !important;
 }
 
 .image {
