@@ -1,0 +1,5 @@
+hr {
+    background-color:  var(--primary400);
+    height: 0.2em;
+    border-radius: 0.5em;
+}

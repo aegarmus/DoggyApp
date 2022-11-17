@@ -1,9 +1,12 @@
-import { Grid } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+
+import { Grid } from '@mui/material';
 
 import { Cards } from '../components/Cards/Cards';
 import { BreedSelector } from '../components/Selectors/BreedSelector';
 import { getBreeds, getDogImg, getSubBreeds } from '../helpers/https';
+
+import "./mainPage.css"
 
 export const DoggyList = () => {
 	const [breeds, setBreeds] = useState([]);
