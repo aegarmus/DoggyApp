@@ -16,4 +16,17 @@
 	--white: #ffffff;
 }
 
+.pageContainer {
+  position: relative;
+  min-height: 100vh;
+}
 
+.mainContainer {
+  padding: 1em 1em 5em 1em;
+}
+
+.footerApp {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

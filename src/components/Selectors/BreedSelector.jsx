@@ -5,8 +5,7 @@ import makeAnimated from 'react-select/animated';
 import { Grid } from '@mui/material';
 import 'animate.css';
 
-import "./breedSelector.css"
-
+import './breedSelector.css';
 
 const animatedComponents = makeAnimated();
 
@@ -19,7 +18,7 @@ export const BreedSelector = ({
 	onChangeSubBreed,
 }) => {
 	return (
-		<Grid className="container-grid-select" xs={12} md={6} >
+		<Grid className="container-grid-select" xs={12} md={6}>
 			<Select
 				closeMenuOnSelect={false}
 				components={animatedComponents}
@@ -29,8 +28,7 @@ export const BreedSelector = ({
 				onChange={onChangeBreed}
 				value={selectedBreed}
 				placeholder="Select the breeds you looking for...."
-				className='selectBar'
-				
+				className="selectBar"
 			/>
 			{subBreeds && !!subBreeds.length && (
 				<Select
@@ -42,8 +40,7 @@ export const BreedSelector = ({
 					onChange={onChangeSubBreed}
 					value={selectedSubBreed}
 					placeholder="Select the sub-breeds you looking for...."
-					className='selectBar animate__fadeInDown'
-					
+					className="selectBar animate__fadeInDown"
 				/>
 			)}
 		</Grid>

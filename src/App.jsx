@@ -1,18 +1,22 @@
-import { useState } from 'react'
+import { Footer } from './components/footer/Footer';
 import { Header } from './components/header/Header';
 import { DoggyList } from './pages/MainPage';
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <Header />
-    <DoggyList />
-    
-    </>
-  )
+	return (
+		<>
+			<div className="pageContainer">
+				<div className="mainContainer">
+					<Header />
+					<DoggyList />
+				</div>
+				<div className="footerApp">
+					<Footer />
+				</div>
+			</div>
+		</>
+	);
 }
 
-export default App
+export default App;
